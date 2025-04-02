@@ -10,10 +10,18 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-/* added style */
+/* added custom style */
 .btn {
   border-radius: 50px !important;
 }
+
+
+main {
+  flex: 1; /* Pushes the footer down */
+}
+/*  */
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

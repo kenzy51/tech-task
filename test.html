@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensure full height layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page container to ensure footer stays at bottom */
+        #page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Content should push the footer down */
+        #content-wrap {
+            flex: 1;
+        }
+
+        /* Footer styling */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container px-5">
+                    <a class="navbar-brand text-black d-lg-none" href="#">I Landing</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <a class="navbar-brand text-black d-none d-lg-block" href="#">I Landing</a>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link text-black active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" href="#">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link text-black" href="#">Contact</a></li>
+                        </ul>
+                        <a class="btn btn-primary btn-lg px-4" href="#features">Get Started</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content Section (Can be Removed) -->
+            <section class="bg-primary py-5 text-white text-center">
+                <div class="container px-5 my-5">
+                    <h2 class="fw-bolder">Get in touch</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button type="button" class="btn btn-outline-light">Call to Action</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer (Always at the Bottom) -->
+        <footer>
+            <div class="container">
+                <p>Developed by Kenzy Dev 😉</p>
+                <a href="https://kenzy.vercel.app/developer" class="text-white">Check Portfolio</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
